@@ -3,53 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CODING QUEST</title>
+    <title>GitHub Team Activity</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="pixel-text">CODING QUEST</h1>
-        <p class="pixel-text">Welcome to the Coding Quest! Ready to embark on an adventure?</p>
-
-        <!-- Person A Instructions -->
-        <div class="step" id="stepA">
-            <p class="pixel-text">Person A:</p>
-            <p class="pixel-text">You are going to be the leader of this quest, and will be the creator of this website.</p>
-            <p class="pixel-text">Step 1: Create a Repository on GitHub.</p>
-            <p class="pixel-text">Go to GitHub, click the '+' button near the search bar, select 'New Repository.' Make it public, name it, add a README, then go to Collaborators & Teams: Add Collaborators and give your team the admin role.</p>
-            <button class="nextButton" onclick="nextStep('stepB')">Click when done</button>
+        <h1 class="pixel-text">GitHub Team Activity</h1>
+        <p class="pixel-text">Choose your role to start:</p>
+        <div class="options">
+            <button id="optionA">Option A</button>
+            <button id="optionB">Option B</button>
+            <button id="optionC">Option C</button>
         </div>
-
-        <!-- Person B Instructions -->
-        <div class="step hidden" id="stepB">
-            <p class="pixel-text">Person B:</p>
-            <p class="pixel-text">You will be in charge of the HTML file (the backbone of the website). Wait for Person A to make the repository, and you will receive an invite in your GitHub notifications. Click the button below once you are in.</p>
-            <button class="nextButton" onclick="nextStep('stepC')">Click when done</button>
+        <div id="taskContainer" class="hidden">
+            <p id="taskDescription" class="pixel-text"></p>
+            <button id="nextTask" class="hidden">Next Task</button>
         </div>
-
-        <!-- Person C Instructions -->
-        <div class="step hidden" id="stepC">
-            <p class="pixel-text">Person C:</p>
-            <p class="pixel-text">You are in charge of the CSS file, the fun styling part! Wait for Person A to make the repository, and you will receive the invite in your GitHub notifications. Click the button below once you are in.</p>
-            <button class="nextButton" onclick="nextStep('stepD')">Click when done</button>
-        </div>
-
-        <!-- Final Task -->
-        <div class="step hidden" id="stepD">
-            <p class="pixel-text">Final Step: Let's deploy!</p>
-            <p class="pixel-text">Go to settings ⇒ Pages ⇒ Choose branch 'main' and folder 'root' then click save. Wait a few seconds for the website to deploy. You will see it on the GitHub code page.</p>
-            <button class="nextButton" onclick="nextStep('certificateInput')">Click when done</button>
-        </div>
-
-        <!-- Certificate Input -->
-        <div class="step hidden" id="certificateInput">
-            <p class="pixel-text">Enter the following code for your certificate:</p>
-            <input type="text" id="certificateInputField" placeholder="Enter Code Here" />
-            <button class="nextButton" onclick="submitCertificate()">Submit Certificate</button>
-        </div>
-
     </div>
-
-    <script src="script.js"></s
-
+    <script src="script.js"></script>
+</body>
+</html>
 
