@@ -19,7 +19,7 @@ body {
 
 /* Pixel art text */
 .pixel-text {
-    font-size: 20px;
+    font-size: 24px;
     color: #ffd700; /* Golden yellow */
     text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 0px #000;
 }
@@ -48,18 +48,23 @@ body {
     display: none;
 }
 
-/* Task description */
-#taskDescription {
+/* Code snippet box */
+pre {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 16px;
     margin-top: 20px;
-    font-size: 18px;
-    color: #ffffff;
+    overflow-x: auto;
 }
 
-/* Next task button */
-#nextTask {
+/* Action button */
+#actionButton {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #007bff; /* Blue */
     color: white;
     border: none;
@@ -68,10 +73,6 @@ body {
     text-transform: uppercase;
 }
 
-#nextTask:hover {
+#actionButton:hover {
     background-color: #0056b3;
 }
-
-
-
-
