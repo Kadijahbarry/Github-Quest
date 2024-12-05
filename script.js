@@ -1,72 +1,27 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Start Buttons
-    document.getElementById("startButtonA").addEventListener("click", () => {
-        document.getElementById("personA").classList.remove("hidden");
+// Function to show the next step and hide the current one
+function nextStep(stepId) {
+    // Hide all steps
+    const steps = document.querySelectorAll('.step');
+    steps.forEach(step => {
+        step.classList.add('hidden');
     });
 
-    document.getElementById("startButtonB").addEventListener("click", () => {
-        document.getElementById("personB").classList.remove("hidden");
-    });
+    // Show the next step
+    const nextStep = document.getElementById(stepId);
+    nextStep.classList.remove('hidden');
+}
 
-    document.getElementById("startButtonC").addEventListener("click", () => {
-        document.getElementById("personC").classList.remove("hidden");
-    });
+// Function to handle certificate submission (can be customized)
+function submitCertificate() {
+    const certificateInput = document.getElementById('certificateInputField').value;
+    
+    // Check if the input is correct (you can change the logic to match your needs)
+    if (certificateInput.toLowerCase() === "github completion") {
+        alert("Congratulations! You've completed the quest!");
+    } else {
+        alert("Oops! That doesn't look right. Try again.");
+    }
+}
 
-    // Person A Next Buttons
-    document.getElementById("nextA1").addEventListener("click", () => {
-        document.getElementById("taskA2").classList.remove("hidden");
-        document.getElementById("taskA1").classList.add("hidden");
-    });
-
-    document.getElementById("nextA2").addEventListener("click", () => {
-        document.getElementById("taskA3").classList.remove("hidden");
-        document.getElementById("taskA2").classList.add("hidden");
-    });
-
-    document.getElementById("nextA3").addEventListener("click", () => {
-        document.getElementById("taskA4").classList.remove("hidden");
-        document.getElementById("taskA3").classList.add("hidden");
-    });
-
-    document.getElementById("nextA4").addEventListener("click", () => {
-        document.getElementById("taskA5").classList.remove("hidden");
-        document.getElementById("taskA4").classList.add("hidden");
-    });
-
-    // Person B Next Buttons
-    document.getElementById("inRepoB").addEventListener("click", () => {
-        document.getElementById("taskB1").classList.remove("hidden");
-    });
-
-    document.getElementById("nextB1").addEventListener("click", () => {
-        document.getElementById("taskB2").classList.remove("hidden");
-        document.getElementById("taskB1").classList.add("hidden");
-    });
-
-    document.getElementById("nextB2").addEventListener("click", () => {
-        document.getElementById("taskB3").classList.remove("hidden");
-        document.getElementById("taskB2").classList.add("hidden");
-    });
-
-    // Person C Next Buttons
-    document.getElementById("inRepoC").addEventListener("click", () => {
-        document.getElementById("taskC1").classList.remove("hidden");
-    });
-
-    document.getElementById("nextC1").addEventListener("click", () => {
-        document.getElementById("taskC2").classList.remove("hidden");
-        document.getElementById("taskC1").classList.add("hidden");
-    });
-
-    document.getElementById("nextC2").addEventListener("click", () => {
-        document.getElementById("taskC3").classList.remove("hidden");
-        document.getElementById("taskC2").classList.add("hidden");
-    });
-
-    document.getElementById("nextC3").addEventListener("click", () => {
-        document.getElementById("taskC4").classList.remove("hidden");
-        document.getElementById("taskC3").classList.add("hidden");
-    });
-});
 
 
