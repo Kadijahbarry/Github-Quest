@@ -1,73 +1,86 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const optionA = document.getElementById("optionA");
-    const optionB = document.getElementById("optionB");
-    const optionC = document.getElementById("optionC");
-    const taskContainer = document.getElementById("taskContainer");
-    const taskDescription = document.getElementById("taskDescription");
-    const nextTask = document.getElementById("nextTask");
+    const roleA = document.getElementById("roleA");
+    const roleB = document.getElementById("roleB");
+    const roleC = document.getElementById("roleC");
+    const instructionContainer = document.getElementById("instructionContainer");
+    const instructionText = document.getElementById("instructionText");
+    const codeSnippet = document.getElementById("codeSnippet");
+    const actionButton = document.getElementById("actionButton");
 
-    let currentTask = 0;
+    let currentRole = "";
+    let taskStep = 0;
+
     const tasks = {
         A: [
-            "Your job is to create a repository for the team.",
-            "Add B and C as collaborators in the repository.",
-            "When you're done, click the button to confirm everyone joined!"
+            {
+                text: "Step 1: Create a Repository on GitHub.\nGo to GitHub, click the '+' button near the search bar, select 'New Repository.'\nMake it public, name it, and add a README. Add your teammates.",
+                code: "",
+            },
+            {
+                text: "Step 2: Create the JavaScript file.\nCopy the code below into a new file called `script.js`.",
+                code: `console.log("Hello from JavaScript!");`,
+            },
+            {
+                text: "Oh no! You all made mistakes. Fix Person B's HTML code.",
+                code: "<!DOCTYPE html><html><head><title>Oops</title></head><body><h1>Fix me!</h1></body></html>",
+            },
         ],
         B: [
-            "Your job is to create the HTML code for the project.",
-            "Once you're done, push your changes to the repository.",
-            "Coordinate with C to ensure their CSS matches the structure!"
+            {
+                text: "Step 1: Create the HTML file in the repository.",
+                code: `<!DOCTYPE html>\n<html>\n<head>\n<title>GitHub Adventure</title>\n</head>\n<body>\n<h1>Hello World!</h1>\n</body>\n</html>`,
+            },
+            {
+                text: "Oh no! Fix Person C's CSS code.",
+                code: "body {\n  color: broken-code;\n}",
+            },
         ],
         C: [
-            "Your job is to create the CSS code for the project.",
-            "Collaborate with B to make the design pixel-perfect.",
-            "Don't forget to pull A's JavaScript updates!"
+            {
+                text: "Step 1: Create the CSS file in the repository.",
+                code: `body {\n  background-color: #1e1e1e;\n  color: #ffffff;\n}`,
+            },
+            {
+                text: "Oh no! Fix Person A's JavaScript code.",
+                code: `console.log("Oops, something's missing!");`,
+            },
         ],
-        Final: [
-            "Oh no! Mistakes were found in the code.",
-            "Work as a team to fix bugs, push, and pull updates.",
-            "Congratulations! You've completed the activity!"
-        ]
     };
 
-    let selectedRole = "";
-
     // Handle role selection
-    optionA.addEventListener("click", () => startTasks("A"));
-    optionB.addEventListener("click", () => startTasks("B"));
-    optionC.addEventListener("click", () => startTasks("C"));
+    roleA.addEventListener("click", () => startRole("A"));
+    roleB.addEventListener("click", () => startRole("B"));
+    roleC.addEventListener("click", () => startRole("C"));
 
-    function startTasks(role) {
-        selectedRole = role;
-        currentTask = 0;
+    function startRole(role) {
+        currentRole = role;
+        taskStep = 0;
         showTask();
-        hideOptions();
     }
 
     function showTask() {
-        if (currentTask < tasks[selectedRole].length) {
-            taskDescription.textContent = tasks[selectedRole][currentTask];
-            taskContainer.classList.remove("hidden");
-            nextTask.classList.remove("hidden");
-        } else if (currentTask === tasks[selectedRole].length) {
-            taskDescription.textContent = tasks.Final[0];
+        const task = tasks[currentRole][taskStep];
+        instructionText.textContent = task.text;
+        instructionContainer.classList.remove("hidden");
+        if (task.code) {
+            codeSnippet.textContent = task.code;
+            codeSnippet.classList.remove("hidden");
         } else {
-            taskDescription.textContent = tasks.Final[2];
-            nextTask.classList.add("hidden");
+            codeSnippet.classList.add("hidden");
         }
+        actionButton.textContent = taskStep === tasks[currentRole].length - 1 ? "Finish" : "Done";
+        actionButton.classList.remove("hidden");
     }
 
-    function hideOptions() {
-        optionA.style.display = "none";
-        optionB.style.display = "none";
-        optionC.style.display = "none";
-    }
-
-    // Handle next task button
-    nextTask.addEventListener("click", () => {
-        currentTask++;
-        showTask();
+    actionButton.addEventListener("click", () => {
+        taskStep++;
+        if (taskStep < tasks[currentRole].length) {
+            showTask();
+        } else {
+            instructionContainer.innerHTML = "<p class='pixel-text'>Mission Complete! Great job, team!</p>";
+        }
     });
 });
+
 
 
