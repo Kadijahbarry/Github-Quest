@@ -2,73 +2,73 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Press Start 2P', cursive; /* Pixel art font for game theme */
-    background-color: #121212; /* Dark theme for a game-like background */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #111; /* Darker background for a more game-like feel */
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     text-align: center;
-    overflow: hidden;
+    background: url('https://www.transparenttextures.com/patterns/bright-square.png'), #333; /* Game-inspired background texture */
+    background-size: cover;
+    background-position: center;
 }
 
 /* Container Styling */
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 600px;
-    padding: 40px;
-    background: linear-gradient(145deg, #444, #333); /* Darker gradient for game look */
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.1);
-    background-image: url('https://i.imgur.com/3JrHlvn.png'); /* Adding a subtle pixel background */
-    background-size: cover;
-    position: relative;
+    padding: 20px;
+    background: linear-gradient(145deg, #222, #1a1a1a); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #0e0e0e, -5px -5px 10px #333;
 }
 
 /* Title and Text Styling */
 h1.pixel-text {
-    font-size: 3em;
+    font-size: 2.5em;
     text-shadow: 2px 2px 0px #333, 4px 4px 0px #666;
     margin-bottom: 20px;
     color: #ffcc00;
-    letter-spacing: 3px;
+    animation: pixelGlow 1.5s infinite alternate; /* Glowing effect for title */
+}
+
+@keyframes pixelGlow {
+    0% {
+        text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+    }
+    100% {
+        text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00;
+    }
 }
 
 p.pixel-text {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 10px 0;
-    text-shadow: 1px 1px 3px #000;
-    color: #eee;
 }
 
 /* Button Styling */
 button {
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: #fff;
     background-color: #333;
     border: 2px solid #555;
-    padding: 15px 30px;
-    margin: 20px 0;
-    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6), -4px -4px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 5px #000, -3px -3px 5px #444;
     transition: all 0.3s ease;
-    display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* Button hover effect */
 button:hover {
     background-color: #555;
     border-color: #777;
     color: #ffcc00;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-/* Button active effect */
 button:active {
     background-color: #222;
     box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #444;
@@ -87,10 +87,25 @@ pre {
     text-align: left;
     border-radius: 5px;
     overflow: auto;
-    max-height: 250px;
+    max-height: 200px;
     font-size: 0.9em;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6), -3px -3px 15px rgba(255, 255, 255, 0.1);
+    box-shadow: 3px 3px 10px #000, -3px -3px 10px #444;
     border: 1px solid #444;
+}
+
+/* Certificate Input Styling */
+#certificateInput {
+    width: 80%;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 5px #111, inset -3px -3px 5px #333;
 }
 
 /* Responsive Design */
@@ -100,54 +115,14 @@ pre {
     }
 
     button {
-        font-size: 1.1em;
-        padding: 12px 20px;
+        font-size: 1em;
+        padding: 10px 15px;
     }
 
     pre {
-        font-size: 0.85em;
+        font-size: 0.8em;
     }
 }
 
-/* Task Styling */
-.task {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5), -3px -3px 10px rgba(255, 255, 255, 0.2);
-}
-
-.task h2 {
-    font-size: 1.7em;
-    margin-bottom: 10px;
-}
-
-.task p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-/* Special Game-Theme Styling */
-.game-header {
-    color: #ffcc00;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
-}
-
-.game-info {
-    font-size: 1.3em;
-    color: #ccc;
-    margin-top: 15px;
-}
-
-.game-info a {
-    color: #ffcc00;
-    text-decoration: underline;
-}
 
 
