@@ -11,7 +11,7 @@
         <h1 class="pixel-text">CODING QUEST</h1>
         <p class="pixel-text">Your mission begins now! Choose your role below to start your journey.</p>
         
-        <!-- Task Buttons -->
+        <!-- Role Buttons -->
         <div id="taskButtons">
             <button id="startButtonA">Start Person A's Quest</button>
             <button id="startButtonB">Start Person B's Quest</button>
@@ -22,13 +22,19 @@
         <div id="personA" class="hidden">
             <h2 class="pixel-text">Person A: The Creator</h2>
             <p class="pixel-text">You are the leader of this quest. Your first task is to create the repository and gather your team!</p>
-            <h3 class="pixel-text">Step 1: Create the Repository on GitHub</h3>
-            <p>Go to GitHub, click the '+' button near the search bar, select 'New Repository'. Make it public, name it, and add a README. Under 'Collaborators & Teams', click 'Add Collaborators' and add your team. Give them the Admin role.</p>
-            <button id="doneA">Click when done</button>
 
-            <h3 class="pixel-text">Step 2: Create `script.js`</h3>
-            <p>Copy the JavaScript code below into your new file `script.js`:</p>
-            <pre><code>document.addEventListener("DOMContentLoaded", () => {
+            <!-- Task 1 -->
+            <div class="task" id="taskA1">
+                <h3 class="pixel-text">Step 1: Create the Repository on GitHub</h3>
+                <p>Go to GitHub, click the '+' button near the search bar, select 'New Repository'. Make it public, name it, and add a README. Under 'Collaborators & Teams', click 'Add Collaborators' and add your team. Give them the Admin role.</p>
+                <button class="nextBtn" id="nextA1">Next</button>
+            </div>
+
+            <!-- Task 2 -->
+            <div class="task hidden" id="taskA2">
+                <h3 class="pixel-text">Step 2: Create `script.js`</h3>
+                <p>Copy the JavaScript code below into your new file `script.js`:</p>
+                <pre><code>document.addEventListener("DOMContentLoaded", () => {
     const revealButton = document.getElementById("revealButton");
     const hiddenMessage = document.getElementById("hiddenMessage");
 
@@ -37,34 +43,45 @@
         revealButton.style.display = "none";  // Hide the button after clicking
     });
 });</code></pre>
-            <button id="doneA2">Click when done</button>
+                <button class="nextBtn" id="nextA2">Next</button>
+            </div>
 
-            <h3 class="pixel-text">Step 3: Help Fix Mistakes</h3>
-            <p>Oh no, everyone has made mistakes in their code! It's time for you to help each other using GitHub's pull and push feature.</p>
-            <button id="doneA3">Click when done</button>
+            <!-- Task 3 -->
+            <div class="task hidden" id="taskA3">
+                <h3 class="pixel-text">Step 3: Help Fix Mistakes</h3>
+                <p>Everyone has made mistakes in their code! It's time for you to help each other using GitHub's pull and push feature.</p>
+                <button class="nextBtn" id="nextA3">Next</button>
+            </div>
 
-            <h3 class="pixel-text">Step 4: Fun Facts</h3>
-            <ul class="pixel-text">
-                <li>Fun fact: This event is run by SWE (Society of Women Engineers)!</li>
-                <li>Fun fact 2: GitHub was founded in April 2008.</li>
-                <li>Fun fact 3: GitHub HQ is in San Francisco.</li>
-            </ul>
-            <button id="doneA4">Click when done</button>
+            <!-- Task 4 -->
+            <div class="task hidden" id="taskA4">
+                <h3 class="pixel-text">Step 4: Fun Facts</h3>
+                <ul class="pixel-text">
+                    <li>Fun fact: This event is run by SWE (Society of Women Engineers)!</li>
+                    <li>Fun fact 2: GitHub was founded in April 2008.</li>
+                    <li>Fun fact 3: GitHub HQ is in San Francisco.</li>
+                </ul>
+                <button class="nextBtn" id="nextA4">Next</button>
+            </div>
 
-            <h3 class="pixel-text">Step 5: Deploy the Website</h3>
-            <p>Go to Settings → Pages → Select 'main' branch and folder 'root', then save. Wait a few seconds and the website will be live!</p>
-            <button id="doneA5">Click when done</button>
+            <!-- Task 5 -->
+            <div class="task hidden" id="taskA5">
+                <h3 class="pixel-text">Step 5: Deploy the Website</h3>
+                <p>Go to Settings → Pages → Select 'main' branch and folder 'root', then save. Wait a few seconds and the website will be live!</p>
+                <button class="nextBtn" id="nextA5">Next</button>
+            </div>
         </div>
 
         <!-- Person B's Task Section -->
         <div id="personB" class="hidden">
             <h2 class="pixel-text">Person B: The HTML Master</h2>
             <p class="pixel-text">You are in charge of creating the HTML file. But first, wait for Person A to create the repository. Once you have access, click below!</p>
-            <button id="inRepoB">Click when in Repository</button>
+            <button class="nextBtn" id="inRepoB">Next</button>
 
-            <h3 class="pixel-text">Step 1: Create `index.html`</h3>
-            <p>Copy the HTML code below into your new file `index.html`:</p>
-            <pre><code>&lt;!DOCTYPE html&gt;
+            <div class="task hidden" id="taskB1">
+                <h3 class="pixel-text">Step 1: Create `index.html`</h3>
+                <p>Copy the HTML code below into your new file `index.html`:</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -83,25 +100,32 @@
     &lt;script src="script.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-            <button id="doneB">Click when done</button>
+                <button class="nextBtn" id="nextB1">Next</button>
+            </div>
 
-            <h3 class="pixel-text">Step 2: Help Fix Mistakes</h3>
-            <button id="doneB2">Click when done</button>
+            <div class="task hidden" id="taskB2">
+                <h3 class="pixel-text">Step 2: Help Fix Mistakes</h3>
+                <p>Oh no! There's a bug in the HTML. Help fix it!</p>
+                <button class="nextBtn" id="nextB2">Next</button>
+            </div>
 
-            <h3 class="pixel-text">Secret Quest</h3>
-            <p>Change [BLANK 1] with "Congratulations!" and [BLANK 2] with "Your team has earned a Certificate in GitHub!"</p>
-            <button id="doneB3">Click when done</button>
+            <div class="task hidden" id="taskB3">
+                <h3 class="pixel-text">Secret Quest</h3>
+                <p>Change [BLANK 1] with "Congratulations!" and [BLANK 2] with "Your team has earned a Certificate in GitHub!"</p>
+                <button class="nextBtn" id="nextB3">Next</button>
+            </div>
         </div>
 
         <!-- Person C's Task Section -->
         <div id="personC" class="hidden">
             <h2 class="pixel-text">Person C: The CSS Wizard</h2>
             <p class="pixel-text">Your role is to style the website. But first, wait for Person A to create the repository. Once you have access, click below!</p>
-            <button id="inRepoC">Click when in Repository</button>
+            <button class="nextBtn" id="inRepoC">Next</button>
 
-            <h3 class="pixel-text">Step 1: Create `style.css`</h3>
-            <p>Copy the CSS code below into your new file `style.css`:</p>
-            <pre><code>/* Add your custom styles here */
+            <div class="task hidden" id="taskC1">
+                <h3 class="pixel-text">Step 1: Create `style.css`</h3>
+                <p>Copy the CSS code below into your new file `style.css`:</p>
+                <pre><code>/* Add your custom styles here */
 body {
     background-color: #1e1e1e;
     color: #fff;
@@ -110,24 +134,33 @@ body {
 
 /* More CSS styling here... */
 </code></pre>
-            <button id="doneC">Click when done</button>
+                <button class="nextBtn" id="nextC1">Next</button>
+            </div>
 
-            <h3 class="pixel-text">Step 2: Help Fix Mistakes</h3>
-            <button id="doneC2">Click when done</button>
+            <div class="task hidden" id="taskC2">
+                <h3 class="pixel-text">Step 2: Help Fix Mistakes</h3>
+                <p>Fix the style bugs and make the webpage look better!</p>
+                <button class="nextBtn" id="nextC2">Next</button>
+            </div>
 
-            <h3 class="pixel-text">Fun Facts</h3>
-            <ul class="pixel-text">
-                <li>Fun fact: GitHub was founded in April 2008.</li>
-                <li>Fun fact 2: GitHub HQ is in San Francisco.</li>
-            </ul>
-            <button id="doneC3">Click when done</button>
+            <div class="task hidden" id="taskC3">
+                <h3 class="pixel-text">Fun Facts</h3>
+                <ul class="pixel-text">
+                    <li>Fun fact: GitHub was founded in April 2008.</li>
+                    <li>Fun fact 2: GitHub HQ is in San Francisco.</li>
+                </ul>
+                <button class="nextBtn" id="nextC3">Next</button>
+            </div>
 
-            <h3 class="pixel-text">Step 3: Deploy the Website</h3>
-            <p>Go to Settings → Pages → Select 'main' branch and folder 'root', then save. Wait a few seconds and the website will be live!</p>
-            <button id="doneC4">Click when done</button>
+            <div class="task hidden" id="taskC4">
+                <h3 class="pixel-text">Step 3: Deploy the Website</h3>
+                <p>Go to Settings → Pages → Select 'main' branch and folder 'root', then save. Wait a few seconds and the website will be live!</p>
+                <button class="nextBtn" id="nextC4">Next</button>
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
