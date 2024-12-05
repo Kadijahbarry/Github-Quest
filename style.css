@@ -1,112 +1,47 @@
-/* General Styling */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
     background-color: #1e1e1e;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* Container Styling */
-.container {
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    background: linear-gradient(145deg, #222, #1a1a1a);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #0e0e0e, -5px -5px 10px #333;
+.pixel-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    color: #ff0;
 }
 
-/* Title and Text Styling */
-h1.pixel-text {
-    font-size: 2.5em;
-    text-shadow: 2px 2px 0px #333, 4px 4px 0px #666;
-    margin-bottom: 20px;
-    color: #ffcc00;
-}
-
-p.pixel-text {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* Button Styling */
 button {
-    font-size: 1.1em;
-    color: #fff;
-    background-color: #333;
-    border: 2px solid #555;
+    background-color: #28a745;
+    border: none;
+    color: white;
     padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
     cursor: pointer;
-    box-shadow: 3px 3px 5px #000, -3px -3px 5px #444;
-    transition: all 0.3s ease;
+    margin: 10px;
 }
 
 button:hover {
-    background-color: #555;
-    border-color: #777;
-    color: #ffcc00;
-    transform: scale(1.1);
+    background-color: #218838;
 }
 
-button:active {
-    background-color: #222;
-    box-shadow: inset 2px 2px 5px #000, inset -2px -2px 5px #444;
-}
-
-/* Hidden Elements */
 .hidden {
     display: none;
 }
 
-/* Code Snippet Styling */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
 pre {
-    background-color: #282828;
-    color: #0f0;
-    padding: 15px;
-    text-align: left;
+    background-color: #333;
+    padding: 20px;
     border-radius: 5px;
-    overflow: auto;
-    max-height: 200px;
-    font-size: 0.9em;
-    box-shadow: 3px 3px 10px #000, -3px -3px 10px #444;
-    border: 1px solid #444;
+    overflow-x: auto;
 }
 
-/* Certificate Input Styling */
-#certificateInput {
-    width: 80%;
-    height: 100px;
-    margin-top: 20px;
-    font-size: 16px;
-    font-family: 'Courier New', monospace;
-    padding: 10px;
-    background-color: #222;
-    color: #fff;
-    border: 1px solid #555;
-    border-radius: 5px;
-    box-shadow: inset 3px 3px 5px #111, inset -3px -3px 5px #333;
+ul {
+    list-style-type: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1.pixel-text {
-        font-size: 2em;
-    }
-
-    button {
-        font-size: 1em;
-        padding: 10px 15px;
-    }
-
-    pre {
-        font-size: 0.8em;
-    }
-}
