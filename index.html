@@ -3,25 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeQuest: The GitHub Adventure</title>
+    <title>CODING QUEST</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="pixel-text">CodeQuest: The GitHub Adventure</h1>
-        <p class="pixel-text">Choose your role to begin the mission:</p>
-        <div class="options">
-            <button id="roleA">Person A</button>
-            <button id="roleB">Person B</button>
-            <button id="roleC">Person C</button>
+        <h1 class="pixel-text">CODING QUEST</h1>
+        <p class="pixel-text">Your mission begins now! Choose your role below to start your journey.</p>
+        
+        <!-- Task Buttons -->
+        <div id="taskButtons">
+            <button id="startButtonA">Start Person A's Quest</button>
+            <button id="startButtonB">Start Person B's Quest</button>
+            <button id="startButtonC">Start Person C's Quest</button>
         </div>
-        <div id="instructionContainer" class="hidden">
-            <p id="instructionText" class="pixel-text"></p>
-            <pre id="codeSnippet" class="hidden"></pre>
-            <textarea id="certificateInput" class="hidden" placeholder="Enter the certificate code here..."></textarea>
-            <button id="actionButton" class="hidden">Done</button>
+
+        <!-- Person A's Task Section -->
+        <div id="personA" class="hidden">
+            <h2 class="pixel-text">Person A: The Creator</h2>
+            <p class="pixel-text">You are the leader of this quest. Your first task is to create the repository and gather your team!</p>
+            <h3 class="pixel-text">Step 1: Create the Repository on GitHub</h3>
+            <p>Go to GitHub, click the '+' button near the search bar, select 'New Repository'. Make it public, name it, and add a README. Under 'Collaborators & Teams', click 'Add Collaborators' and add your team. Give them the Admin role.</p>
+            <button id="doneA">Click when done</button>
+
+            <h3 class="pixel-text">Step 2: Create `script.js`</h3>
+            <p>Copy the JavaScript code below into your new file `script.js`:</p>
+            <pre><code>document.addEventListener("DOMContentLoaded", () => {
+    const revealButton = document.getElementById("revealButton");
+    const hiddenMessage = document.getElementById("hiddenMessage");
+
+    revealButton.addEventListener("click", () => {
+        hiddenMessage.style.display = "block"; // Show the hidden message
+        revealButton.style.display = "none";  // Hide the button after clicking
+    });
+});</code></pre>
+            <button id="doneA2">Click when done</button>
+
+            <h3 class="pixel-text">Step 3: Help Fix Mistakes</h3>
+            <p>Oh no, everyone has made mistakes in their code! It's time for you to help each other using GitHub's pull and push feature.</p>
+            <button id="doneA3">Click when done</button>
+
+            <h3 class="pixel-text">Step 4: Fun Facts</h3>
+            <ul class="pixel-text">
+                <li>Fun fact: This event is run by SWE (Society of Women Engineers)!</li>
+                <li>Fun fact 2: GitHub was founded in April 2008.</li>
+                <li>Fun fact 3: GitHub HQ is in San Francisco.</li>
+            </ul>
+            <button id="doneA4">Click when done</button>
+
+            <h3 class="pixel-text">Step 5: Deploy the Website</h3>
+            <p>Go to Settings → Pages → Select 'main' branch and folder 'root', then save. Wait a few seconds and the website will be live!</p>
+            <button id="doneA5">Click when done</button>
+        </div>
+
+        <!-- Person B's Task Section -->
+        <div id="personB" class="hidden">
+            <h2 class="pixel-text">Person B: The HTML Master</h2>
+            <p class="pixel-text">You are in charge of creating the HTML file. But first, wait for Person A to create the repository. Once you have access, click below!</p>
+            <button id="inRepoB">Click when in Repository</button>
+
+            <h3 class="pixel-text">Step 1: Create `index.html`</h3>
+            <p>Copy the HTML code below into your new file `index.html`:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Pixel Art Celebration&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;button id="revealButton"&gt;Click to See&lt;/button&gt;
+        &lt;div id="hiddenMessage"&gt;
+            &lt;p&gt;🎉 &lt;span class="pixel-text"&gt;[BLANK 1]&lt;/span&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;span class="pixel-text"&gt;[BLANK 2]&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <button id="doneB">Click when done</button>
+
+            <h3 class="pixel-text">Step 2: Help Fix Mistakes</h3>
+            <button id="doneB2">Click when done</button>
+
+            <h3 class="pixel-text">Secret Quest</h3>
+            <p>Change [BLANK 1] with "Congratulations!" and [BLANK 2] with "Your team has earned a Certificate in GitHub!"</p>
+            <button id="doneB3">Click when done</button>
+        </div>
+
+        <!-- Person C's Task Section -->
+        <div id="personC" class="hidden">
+            <h2 class="pixel-text">Person C: The CSS Wizard</h2>
+            <p class="pixel-text">Your role is to style the website. But first, wait for Person A to create the repository. Once you have access, click below!</p>
+            <button id="inRepoC">Click when in Repository</button>
+
+            <h3 class="pixel-text">Step 1: Create `style.css`</h3>
+            <p>Copy the CSS code below into your new file `style.css`:</p>
+            <pre><code>/* Add your custom styles here */
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* More CSS styling here... */
+</code></pre>
+            <button id="doneC">Click when done</button>
+
+            <h3 class="pixel-text">Step 2: Help Fix Mistakes</h3>
+            <button id="doneC2">Click when done</button>
+
+            <h3 class="pixel-text">Fun Facts</h3>
+            <ul class="pixel-text">
+                <li>Fun fact: GitHub was founded in April 2008.</li>
+                <li>Fun fact 2: GitHub HQ is in San Francisco.</li>
+            </ul>
+            <button id="doneC3">Click when done</button>
+
+            <h3 class="pixel-text">Step 3: Deploy the Website</h3>
+            <p>Go to Settings → Pages → Select 'main' branch and folder 'root', then save. Wait a few seconds and the website will be live!</p>
+            <button id="doneC4">Click when done</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
