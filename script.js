@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         A: [
             {
                 text: "You are going to be the leader of this quest and will be the creator of this website.
-Step 1: Create a repository on GitHub. Go to GitHub, click the '+' button near the search bar, and select 'New Repository.' Make it public, name it, add a README, then go to Collaborators & Teams. Click Add Collaborators and add the username of your team and give them the admin role.",
+Step 1: Create a repository on GitHub. Go to GitHub, click the + button near the search bar, and select New Repository. Make it public, name it, add a README, then go to Collaborators & Teams. Click Add Collaborators and add the username of your team and give them the admin role.",
             },
             {
                 text: "Step 2: Create the JavaScript file.\nCopy the code below into a new file called `script.js`.",
