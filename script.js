@@ -13,15 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const tasks = {
         A: [
             {
-                text: "You are the leader of this quest and will be taking the firt steps to making the website!\nStep 1: Create a Repository on GitHub.\nGo to GitHub, click the '+' button near the search bar, select 'New Repository.'\nMake it public, name it, and add a README. Add your teammates by clicking Add Collaborators then adding the username of you team. Don't forget to give them a admin role in the Respository.",
+                text: "You are the leader of this quest and will be taking the firt steps to making the website!\n\n\n\n\n\n\n\n\n\n\nStep 1: Create a Repository on GitHub.\nGo to GitHub, click the '+' button near the search bar, select 'New Repository.'\nMake it public, name it, and add a README. Add your teammates by clicking Add Collaborators then adding the username of you team. Don't forget to give them a admin role in the Respository.",
                 code: "",
             },
             {
-                text: "Step 2: Create the JavaScript file.\nCopy the code below into a new file called `script.js`.",
+                text: "Step 2: create a file named `script.js`.(this is important you will see later). copy the code below into the file this will be the javaScript needed for this code, this is what makes that app interactive, and more livily. ",
                 code: `console.log("Hello from JavaScript!");`,
             },
             {
-                text: "Oh no! You all made mistakes. Fix Person B's HTML code.",
+                text: "Oh no!everyone has made mistakes in their code! \n Step 3: Help fix each other's code. while it might be eaiser to go into your partners file and change it, it quickly gets messy and disorganized, Good thing Github has the push and pull features. Let me teach you!\n 1) Clone the repo and ensure it's up to date.\n 2) create a new branch/n 3) Edit the file and fix the mistake./n 4) stage the changes ",
                 code: "<!DOCTYPE html><html><head><title>Oops</title></head><body><h1>Fix me!</h1></body></html>",
             },
         ],
