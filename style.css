@@ -27,9 +27,6 @@ body {
 
 #instructionText {
     text-align: center;
-    line-height: 1.8; /* Increased for better readability */
-    font-size: 18px;
-    color: #c7c7c7; /* Muted light gray for text */
     word-wrap: break-word;
 }
 
