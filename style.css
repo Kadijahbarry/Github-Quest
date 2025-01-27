@@ -22,7 +22,7 @@ body {
     border: 2px solid #444; /* Dark border */
     border-radius: 10px;
     background-color: #1e1e1e; /* Dark gray background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 #instructionText {
