@@ -11,6 +11,26 @@ body {
     height: 100vh;
     flex-direction: column;
 }
+#instructionContainer {
+  margin: 0 auto;
+  width: 60%;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#instructionText {
+  text-align: center;
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #333;
+  word-wrap: break-word;
+}
 
 /* Container styling */
 .container {
