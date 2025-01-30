@@ -18,7 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 text: "Step 2: Create a file named `script.js` (this is important, you will see later). Copy the code below into the file. This will be the JavaScript needed for this code. This is what makes the app interactive and more lively.",
-                code: "console.log('Hello from JavaScript!');",
+                code: "document.addEventListener("DOMContentLoaded", () => {
+    const revealButton = document.getElementById("revealButton");
+    const hiddenMessage = document.getElementById("hiddenMessage");
+
+    // Event listener to show hidden content
+    revealButton.addEventListener("click", () => {
+        hiddenMessage.style.display = "block"; // Show hidden message
+        revealButton.style.display = "none"; // Hide the button after clicking
+    });
+});
+",
             },
             {
                 text: "Oh no! Everyone has made mistakes in their code!\nStep 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!\n1) Clone the repo and ensure it's up to date.\n2) Create a new branch.\n3) Edit the file and fix the mistake.\n4) Stage the changes.",
@@ -40,7 +50,26 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 text: "Step 1: Create a file named index.html (this is important, you will see why). Copy the code below. This is the HTML code needed for this file to work. Click the button below when done.",
-                code: "",
+                code: "<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Celebration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="revealButton">Click to See</button>
+        <div id="hiddenMessage">
+            <p>🎉 <span class="pixel-text">[Blank 1]</span></p>
+            <p><span class="pixel-text">[Blank 2]</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+",
             },
             {
                 text: "Oh no! Everyone has made mistakes in their code!\nStep 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!\n1) Clone the repo and ensure it's up to date.\n2) Create a new branch.\n3) Edit the file and fix the mistake.\n4) Stage the changes.",
@@ -58,7 +87,73 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 text: "Step 1: Create a file named ‘style.css’ (this is important, you will see why). Copy the code below. This is the CSS code needed for this webpage to look nice. I know it’s a lot.",
-                code: "",
+                code: "/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace; /* Retro font */
+    background-color: #1e1e1e; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Hidden message styling */
+#hiddenMessage {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Pixel art text styling */
+.pixel-text {
+    font-size: 24px;
+    color: #ffd700; /* Golden color */
+    text-shadow: 1px 1px 0px #000, /* Pixelated effect */
+                 2px 2px 0px #000,
+                 3px 3px 0px #000;
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+    background-color: #4caf50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Slight zoom */
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+",
             },
             {
                 text: "Oh no! Everyone has made mistakes in their code!\nStep 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!\n1) Clone the repo and ensure it's up to date.\n2) Create a new branch.\n3) Edit the file and fix the mistake.\n4) Stage the changes.",
