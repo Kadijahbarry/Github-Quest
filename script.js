@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 text: "Step 2: Create a file named `script.js` (this is important, you will see later). Copy the code below into the file. This will be the JavaScript needed for this code. This is what makes the app interactive and more lively.",
-                code: "document.addEventListener("DOMContentLoaded", () => {
+                code: `document.addEventListener("DOMContentLoaded", () => {
     const revealButton = document.getElementById("revealButton");
     const hiddenMessage = document.getElementById("hiddenMessage");
 
@@ -27,12 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
         hiddenMessage.style.display = "block"; // Show hidden message
         revealButton.style.display = "none"; // Hide the button after clicking
     });
-});
-",
+});`,
             },
             {
                 text: "Oh no! Everyone has made mistakes in their code!\nStep 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!\n1) Clone the repo and ensure it's up to date.\n2) Create a new branch.\n3) Edit the file and fix the mistake.\n4) Stage the changes.",
-                code: "<!DOCTYPE html><html><head><title>Oops</title></head><body><h1>Fix me!</h1></body></html>",
+                code: `<!DOCTYPE html><html><head><title>Oops</title></head><body><h1>Fix me!</h1></body></html>`,
             },
             {
                 text: "Heyyyyyy, how’s it going? Wanna know some facts? Of course you do!\nFun Fact 1: This event is run by SWE (Society of Women Engineers), and we have events all the time. You should come!\nFun Fact 2: GitHub was founded in April 2008.\nFun Fact 3: GitHub HQ is in San Francisco.",
@@ -50,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 text: "Step 1: Create a file named index.html (this is important, you will see why). Copy the code below. This is the HTML code needed for this file to work. Click the button below when done.",
-                code: "<!DOCTYPE html>
+                code: `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -68,8 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     <script src="script.js"></script>
 </body>
-</html>
-",
+</html>`,
             },
             {
                 text: "Oh no! Everyone has made mistakes in their code!\nStep 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!\n1) Clone the repo and ensure it's up to date.\n2) Create a new branch.\n3) Edit the file and fix the mistake.\n4) Stage the changes.",
@@ -87,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 text: "Step 1: Create a file named ‘style.css’ (this is important, you will see why). Copy the code below. This is the CSS code needed for this webpage to look nice. I know it’s a lot.",
-                code: "/* Body styling */
+                code: `/* Body styling */
 body {
     margin: 0;
     padding: 0;
@@ -152,12 +150,11 @@ button:active {
     to {
         opacity: 1;
     }
-}
-",
+}`,
             },
             {
                 text: "Oh no! Everyone has made mistakes in their code!\nStep 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!\n1) Clone the repo and ensure it's up to date.\n2) Create a new branch.\n3) Edit the file and fix the mistake.\n4) Stage the changes.",
-                code: "body {\n  background-color: #1e1e1e;\n  color: #ffffff;\n}",
+                code: `body {\n  background-color: #1e1e1e;\n  color: #ffffff;\n}`,
             },
             {
                 text: "Heyyyyyy, how’s it going? Wanna know some facts? Of course you do!\nFun fact: This event is run by SWE (Society of Women Engineers), and we have events all the time. You should come!\nFun Fact 2: GitHub was founded in April 2008.\nFun Fact 3: GitHub HQ is in San Francisco.",
@@ -204,6 +201,3 @@ button:active {
         }
     });
 });
-
-
-
