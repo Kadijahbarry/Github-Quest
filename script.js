@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const tasks = {
         A: [
             {
-                text: `You are the leader of this quest and will be taking the first steps to making the website!  
-Step 1: Create a Repository on GitHub.  
+                text: `You are the leader of this quest and will be taking the first steps to making the website!"  
+                text: "Step 1: Create a Repository on GitHub.  
 Go to GitHub, click the '+' button near the search bar, select 'New Repository.'  
 Make it public, name it, and add a README. Add your teammates by clicking Add Collaborators, then adding the username of your team. Don't forget to give them an admin role in the repository.`,
                 code: "",
