@@ -59,9 +59,9 @@ Make it public, name it, and add a README. Add your teammates by going to Settin
 Step 7: Help fix each other's code. While it might be easier to go into your partner's file and change it directly, that quickly gets messy and disorganized. Good thing GitHub has the pull request and review process.
 Go to the repository on GitHub. Then, create a new branch by clicking on the branch dropdown (usually says "main") and selecting "New branch." Name it something related to the fix.
 Next, open the file that needs fixing, click on the pencil icon to edit it, and make the necessary corrections. Scroll down and click "Commit changes." Make sure to select "Commit directly to [your new branch]."
-Then, navigate back to the "Pull Requests" tab and click "New pull request." Select your branch for comparison, then click "Create pull request." Add a description of what was fixed and click "Submit."
+Then, navigate back to the "Pull Requests" tab and click "New pull request." Select your branch for comparison, then click "Create pull request." Add a description of what was fixed and click "Submit.You will fix Person's B code, index.html file"
 `,
-                code: `<!DOCTYPE html><html><head><title>Oops</title></head><body><h1>Fix me!</h1></body></html>`,
+                code: `N/a`,
             },
             {
                 text: `Heyyyyyy, how’s it going? Wanna know some facts? Of course you do!  
