@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 text: `You are the leader of this quest and will be taking the first steps to making the website!"  
                 Step 1: Create a Repository on GitHub.  
 Go to GitHub, click the '+' button near the search bar, select 'New Repository.'  
-Make it public, name it, and add a README. Add your teammates by clicking Add Collaborators, then adding the username of your team. Don't forget to give them an admin role in the repository.`,
+Make it public, name it, and add a README. Add your teammates by go to Settings (⚙️ tab at the top), On the left sidebar, click Collaborators, clicking Add PEOPLE, then adding the username of your team. Don't forget to give them an admin role in the repository.`,
                 code: "",
             },
             {
