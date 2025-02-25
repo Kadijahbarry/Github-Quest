@@ -16,11 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 text: `You are the leader of this quest and will be taking the first steps to making the website!"  
                 Step 1: Create a Repository on GitHub.  
 Go to GitHub, click the '+' button near the search bar, select 'New Repository.'  
-Make it public, name it, and add a README. Add your teammates by go to Settings (⚙️ tab at the top), On the left sidebar, click Collaborators, clicking Add PEOPLE, then adding the username of your team. Don't forget to give them an admin role in the repository.`,
+Make it public, name it, and add a README. Add your teammates by going to Settings (tab at the top), On the left sidebar, click Collaborators, clicking Add PEOPLE, then adding the username of your team. Don't forget to give them an admin role in the repository.`,
                 code: "",
             },
             {
-                text: `Step 2: Create a file named \`script.js\` (this is important, you will see later). Copy the code below into the file. This will be the JavaScript needed for this code. This is what makes the app interactive and more lively.`,
+                text: `Step 1: On main repository page, Click the branches button (under to the repository name),then, In the search bar, type a new branch name ('personA'),Now Click Create branch from main. This is the disrubution version control method; all the files will be form seprate branches`,
+                code: "",
+            },
+
+            {
+                text: `Step 2: In that new branch,Create a file named \`script.js\` (this is important, if you type it wrong the code won't work). Copy the code below into the file. This will be the JavaScript needed for this code. This is what makes the app interactive and more lively. Commit when done`,
                 code: `document.addEventListener("DOMContentLoaded", () => {
     const revealButton = document.getElementById("revealButton");
     const hiddenMessage = document.getElementById("hiddenMessage");
@@ -33,12 +38,29 @@ Make it public, name it, and add a README. Add your teammates by go to Settings 
 });`,
             },
             {
-                text: `Oh no! Everyone has made mistakes in their code!  
-Step 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!  
-1) Clone the repo and ensure it's up to date.  
-2) Create a new branch.  
-3) Edit the file and fix the mistake.  
-4) Stage the changes.`,
+                text: `Step 1: Create a Pull Request, first go to the Pull Requests tab (top of the page),Click New Pull Request (green button).Select your branch and compare it with main, Click Create Pull Request, add a little message, sum up your code for clear commucation with your teammates, click submit`,
+                code: "",
+            },
+            {
+                text: `Step 1: On main repository page, Click the branches button (under to the repository name),then, In the search bar, type a new branch name ('personA'),Now Click Create branch from main. This is the disrubution version control method; all the files will be form seprate branches`,
+                code: "",
+            },
+            {
+                text: `Step 1: You're the captian of this quest, you'll need to comfirm the Pull Request, stay on this page, and when you see your teamates request, "review" and confirm`,
+                code: "",
+            },
+            {
+                text: `Step 1: Go to the main branch in the repository, Click Sync fork or Update branch if available. right now you are putting all the file made to one great branch`,
+                code: "",
+            },
+            {
+                text: `Oh no! Everyone has made mistakes in their code!
+
+Step 3: Help fix each other's code. While it might be easier to go into your partner's file and change it directly, that quickly gets messy and disorganized. Good thing GitHub has the pull request and review process.
+Go to the repository on GitHub. Then, create a new branch by clicking on the branch dropdown (usually says "main") and selecting "New branch." Name it something related to the fix.
+Next, open the file that needs fixing, click on the pencil icon to edit it, and make the necessary corrections. Scroll down and click "Commit changes." Make sure to select "Commit directly to [your new branch]."
+Then, navigate back to the "Pull Requests" tab and click "New pull request." Select your branch for comparison, then click "Create pull request." Add a description of what was fixed and click "Submit."
+`,
                 code: `<!DOCTYPE html><html><head><title>Oops</title></head><body><h1>Fix me!</h1></body></html>`,
             },
             {
@@ -59,7 +81,11 @@ Fun Fact 3: GitHub HQ is in San Francisco.`,
                 code: "",
             },
             {
-                text: `Step 1: Create a file named \`index.html\` (this is important, you will see why). Copy the code below. This is the HTML code needed for this file to work. Click the button below when done.`,
+                text: `Step 1: On main repository page, Click the branches button (under to the repository name),then, In the search bar, type a new branch name ('personC'),Now Click Create branch from main. This is the disrubution version control method all the files will be form seprate branches`,
+                code: "",
+            },
+            {
+                text: `Step 2: In that new branch, Create a file named \`index.html\` (this is important, if you type it wrong the code won't work). Copy the code below. This is the HTML code needed for this file to work. Commit then Click the button below when done.`,
                 code: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,16 +107,28 @@ Fun Fact 3: GitHub HQ is in San Francisco.`,
 </html>`,
             },
             {
-                text: `Oh no! Everyone has made mistakes in their code!  
-Step 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!  
-1) Clone the repo and ensure it's up to date.  
-2) Create a new branch.  
-3) Edit the file and fix the mistake.  
-4) Stage the changes.`,
+                text: `Step 1: Create a Pull Request, first go to the Pull Requests tab (top of the page),Click New Pull Request (green button).Select your branch and compare it with main, Click Create Pull Request, add a little message, sum up your code for clear commucation with your teammates, click submit`,
                 code: "",
             },
             {
-                text: `Secret quest! Quickly, before your team deploys the website, go into the HTML file! Change blank 1 with 'Congratulations!' Change blank 2 with 'Your team has earned a Certificate in GitHub!' I’ll distract them! Hurry!`,
+                text: `Step 1: Wait for the leader to comfirm your request then Go to the main branch in the repository, Click Sync fork or Update branch if available. Right now you are putting all the file to one great branch for you to see`,
+                code: "",
+            },
+            {
+                text: `Step 1: Go to the main branch in the repository, Click Sync fork or Update branch if available. right now you are putting all the file made to one great branch`,
+                code: "",
+            },
+            {
+                text: `Oh no! Everyone has made mistakes in their code!
+
+Step 3: Help fix each other's code. While it might be easier to go into your partner's file and change it directly, that quickly gets messy and disorganized. Good thing GitHub has the pull request and review process.
+Go to the repository on GitHub. Then, create a new branch by clicking on the branch dropdown (usually says "main") and selecting "New branch." Name it something related to the fix.
+Next, open the file that needs fixing, click on the pencil icon to edit it, and make the necessary corrections. Scroll down and click "Commit changes." Make sure to select "Commit directly to [your new branch]."
+Then, navigate back to the "Pull Requests" tab and click "New pull request." Select your branch for comparison, then click "Create pull request." Add a description of what was fixed and click "Submit."`,
+                code: `body {\n  background-color: #1e1e1e;\n  color: #ffffff;\n}`,
+            },
+            {
+                text: `Secret quest! Quickly, before your team deploys the website, go into your HTML file! Change blank 1 with 'Congratulations!' Change blank 2 with 'Your team has earned a Certificate in GitHub!'then commit! I’ll distract them! Hurry!`,
                 code: "",
             },
         ],
@@ -100,13 +138,17 @@ Step 3: Help fix each other's code. While it might be easier to go into your par
                 code: "",
             },
             {
-                text: `Step 1: Create a file named \`style.css\` (this is important, you will see why). Copy the code below. This is the CSS code needed for this webpage to look nice. I know it’s a lot.`,
-                code: `/* Body styling */
+                text: `Step 1: On main repository page, Click the branches button (under to the repository name),then, In the search bar, type a new branch name ('personC'),Now Click Create branch from main.This is the disrubution version control method all the files will be form seprate branches`,
+                code: "",
+            },
+            {
+                text: `Step 2: In that new branch,Create a file named \`style.css\` (this is important, if you type it wrong the code won't work). Copy the code below. This is the CSS code needed for this webpage to look nice. I know it’s a lot. Commit when done`,
+                code: `
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', monospace; /* Retro font */
-    background-color: #1e1e1e; /* Dark background */
+    font-family: 'Courier New', monospace; 
+    background-color: #1e1e1e; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,33 +156,33 @@ body {
     color: #ffffff;
 }
 
-/* Container */
+
 .container {
     text-align: center;
 }
 
-/* Hidden message styling */
+
 #hiddenMessage {
     display: none; /* Hidden by default */
     margin-top: 20px;
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Pixel art text styling */
+
 .pixel-text {
     font-size: 24px;
-    color: #ffd700; /* Golden color */
-    text-shadow: 1px 1px 0px #000, /* Pixelated effect */
+    color: #ffd700;
+    text-shadow: 1px 1px 0px #000, 
                  2px 2px 0px #000,
                  3px 3px 0px #000;
 }
 
-/* Button styling */
+
 button {
     padding: 15px 30px;
     font-size: 18px;
     font-family: 'Courier New', monospace;
-    background-color: #4caf50; /* Green button */
+    background-color: #4caf50; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -151,7 +193,7 @@ button {
 
 button:hover {
     background-color: #45a049;
-    transform: scale(1.1); /* Slight zoom */
+    transform: scale(1.1); 
 }
 
 button:active {
@@ -169,12 +211,20 @@ button:active {
 }`,
             },
             {
-                text: `Oh no! Everyone has made mistakes in their code!  
-Step 3: Help fix each other's code. While it might be easier to go into your partner's file and change it, it quickly gets messy and disorganized. Good thing GitHub has the push and pull features. Let me teach you!  
-1) Clone the repo and ensure it's up to date.  
-2) Create a new branch.  
-3) Edit the file and fix the mistake.  
-4) Stage the changes.`,
+                text: `Step 1: Create a Pull Request, first go to the Pull Requests tab (top of the page),Click New Pull Request (green button).Select your branch and compare it with main, Click Create Pull Request, add a little message, sum up your code for clear commucation with your teammates, click submit`,
+                code: "",
+            },
+            {
+                text: `Step 1: Wait for the leader to comfirm your request then Go to the main branch in the repository, Click Sync fork or Update branch if available. Right now you are putting all the file to one great branch for you to see`,
+                code: "",
+            },
+            {
+                text: `Oh no! Everyone has made mistakes in their code!
+
+Step 3: Help fix each other's code. While it might be easier to go into your partner's file and change it directly, that quickly gets messy and disorganized. Good thing GitHub has the pull request and review process.
+Go to the repository on GitHub. Then, create a new branch by clicking on the branch dropdown (usually says "main") and selecting "New branch." Name it something related to the fix.
+Next, open the file that needs fixing, click on the pencil icon to edit it, and make the necessary corrections. Scroll down and click "Commit changes." Make sure to select "Commit directly to [your new branch]."
+Then, navigate back to the "Pull Requests" tab and click "New pull request." Select your branch for comparison, then click "Create pull request." Add a description of what was fixed and click "Submit."`,
                 code: `body {\n  background-color: #1e1e1e;\n  color: #ffffff;\n}`,
             },
             {
