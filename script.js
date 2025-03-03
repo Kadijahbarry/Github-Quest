@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 text: `You are the leader of this quest and will be taking the first steps to making the website!"  
                 Step 1: Create a Repository on GitHub.  
 Go to GitHub, click the '+' button near the search bar, select 'New Repository.'  
-Make it public, name it, and add a README. Add your teammates by going to Settings (tab at the top), On the left sidebar, click Collaborators, clicking Add PEOPLE, then adding the username of your team. Don't forget to give them an admin role in the repository.`,
+Make it public, name it, and add a README. Add your teammates by going to Settings (tab at the top), On the left sidebar, click Collaborators, clicking Add PEOPLE, then adding the username of your team.`,
                 code: "",
             },
             {
-                text: `Step 2:Creating a file. On main repository page, Click the branches button (under to the repository name),then, In the search bar, type a new branch name ('personA'),Now Click Create branch from main. This is the disrubution version control method; all the files will be from seprate branches`,
+                text: `Step 2: Creating a file. On main repository page, Click the branches button (under to the repository name),then, In the search bar, type a new branch name ('personA'),Now Click Create branch from main. This is the disrubution version control method; all the files will be from seprate branches`,
                 code: "",
             },
 
@@ -30,7 +30,7 @@ Make it public, name it, and add a README. Add your teammates by going to Settin
     const revealButton = document.getElementById("revealButton");
     const hiddenMessage = document.getElementById("hiddenMessage");
 
-    // Event listener to show hidden content
+    
     revealButton.addEventListener("click", () => {
         hiddenMessage.style.display = "block"; // Show hidden message
         revealButton.style.display = "none"; // Hide the button after clicking
@@ -64,6 +64,10 @@ Then, navigate back to the "Pull Requests" tab and click "New pull request." Sel
                 code: `N/a`,
             },
             {
+                text: `Step 8: You're really starting to like your team, making them admin so they can have more control in the docs.`,
+                code: "",
+            },
+            {
                 text: `Heyyyyyy, how’s it going? Wanna know some facts? Of course you do!  
 Fun Fact 1: This event is run by SWE (Society of Women Engineers), and we have events all the time. You should come!  
 Fun Fact 2: GitHub was founded in April 2008.  
@@ -71,7 +75,7 @@ Fun Fact 3: GitHub HQ is in San Francisco.`,
                 code: "",
             },
             {
-                text: `Step 8: Deploy the website togethere. Go to Settings ⇒ Pages ⇒ Branch, set the branch to 'main,' and the folder to 'root,' then save. You have to wait a few mins for the website to complete. You will see it on the code page.`,
+                text: `Step 9: Deploy the website togethere. Go to Settings ⇒ Pages ⇒ Branch, set the branch to 'main,' and the folder to 'root,' then save. You have to wait a few mins for the website to complete. You will see it on the code page.`,
                 code: "",
             },
         ],
